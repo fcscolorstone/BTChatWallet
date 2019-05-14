@@ -97,7 +97,7 @@
             this.lblPrivateKey.Name = "lblPrivateKey";
             this.lblPrivateKey.Size = new System.Drawing.Size(77, 12);
             this.lblPrivateKey.TabIndex = 2;
-            this.lblPrivateKey.Text = "Private Key:";
+            this.lblPrivateKey.Text = "私钥:";
             // 
             // txtPrivateKey
             // 
@@ -115,7 +115,7 @@
             this.btnRefreshBalance.Name = "btnRefreshBalance";
             this.btnRefreshBalance.Size = new System.Drawing.Size(120, 21);
             this.btnRefreshBalance.TabIndex = 4;
-            this.btnRefreshBalance.Text = "Refresh Balance";
+            this.btnRefreshBalance.Text = "刷新";
             this.btnRefreshBalance.UseVisualStyleBackColor = true;
             // 
             // lblAccountBalance
@@ -134,7 +134,7 @@
             this.lblTextAccountBalance.Name = "lblTextAccountBalance";
             this.lblTextAccountBalance.Size = new System.Drawing.Size(107, 12);
             this.lblTextAccountBalance.TabIndex = 2;
-            this.lblTextAccountBalance.Text = "Balance In Ether:";
+            this.lblTextAccountBalance.Text = "余额（ETH）:";
             // 
             // panel1
             // 
@@ -177,8 +177,6 @@
             this.cmbUrl.FormattingEnabled = true;
             this.cmbUrl.Items.AddRange(new object[] {
             "https://mainnet.infura.io",
-            "https://ropsten.infura.io/v3/cd454abdbf054350b0ebe5f9bd592b3f",
-            "https://mainnet.infura.io/v3/cd454abdbf054350b0ebe5f9bd592b3f",
             "http://localhost:8545"});
             this.cmbUrl.Location = new System.Drawing.Point(127, 85);
             this.cmbUrl.Name = "cmbUrl";
@@ -227,7 +225,7 @@
             this.gbStandardToken.Size = new System.Drawing.Size(444, 276);
             this.gbStandardToken.TabIndex = 3;
             this.gbStandardToken.TabStop = false;
-            this.gbStandardToken.Text = "Standard Token";
+            this.gbStandardToken.Text = "标准以太坊Token";
             // 
             // standardTokenTransferUserControl1
             // 
@@ -265,7 +263,7 @@
             this.gbTransfer.Size = new System.Drawing.Size(394, 276);
             this.gbTransfer.TabIndex = 1;
             this.gbTransfer.TabStop = false;
-            this.gbTransfer.Text = "Send Transaction";
+            this.gbTransfer.Text = "发送交易";
             // 
             // transferUserControl1
             // 
@@ -295,7 +293,7 @@
             this.tabStepMainLoadAccount.Padding = new System.Windows.Forms.Padding(3);
             this.tabStepMainLoadAccount.Size = new System.Drawing.Size(844, 543);
             this.tabStepMainLoadAccount.TabIndex = 3;
-            this.tabStepMainLoadAccount.Text = "Load Account";
+            this.tabStepMainLoadAccount.Text = "加载账户";
             this.tabStepMainLoadAccount.UseVisualStyleBackColor = true;
             // 
             // tabPageLoadAccount
@@ -318,7 +316,7 @@
             this.tabPageLoadAccountFromFile.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageLoadAccountFromFile.Size = new System.Drawing.Size(830, 511);
             this.tabPageLoadAccountFromFile.TabIndex = 0;
-            this.tabPageLoadAccountFromFile.Text = "Load Account From File";
+            this.tabPageLoadAccountFromFile.Text = "从KeyStore文件加载";
             this.tabPageLoadAccountFromFile.UseVisualStyleBackColor = true;
             // 
             // keystoreAccountLoaderUserControl3
@@ -359,7 +357,7 @@
             this.tabPageLoadAccountFromPrivateKey.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageLoadAccountFromPrivateKey.Size = new System.Drawing.Size(830, 511);
             this.tabPageLoadAccountFromPrivateKey.TabIndex = 2;
-            this.tabPageLoadAccountFromPrivateKey.Text = "Load Account From Private Key";
+            this.tabPageLoadAccountFromPrivateKey.Text = "导入私钥";
             this.tabPageLoadAccountFromPrivateKey.UseVisualStyleBackColor = true;
             // 
             // privateKeyAccountLoaderUserControl1
@@ -390,7 +388,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabSteps);
             this.Name = "MainForm";
-            this.Text = "Nethereum - Simple Wallet";
+            this.Text = "BTChat Wallet";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPageTransactions.ResumeLayout(false);
