@@ -44,21 +44,21 @@
             this.tabPageTransactions = new System.Windows.Forms.TabPage();
             this.panelSendTransactionStandardToken = new System.Windows.Forms.Panel();
             this.gbStandardToken = new System.Windows.Forms.GroupBox();
-            this.standardTokenTransferUserControl1 = new FCS.BTChatWallet.Controls.StandardToken.StandardTokenTransferUserControl();
-            this.standardTokenBalanceOfUserControl1 = new FCS.BTChatWallet.Controls.StandardToken.StandardTokenBalanceOfUserControl();
-            this.standardTokenContractAddressUserControl1 = new FCS.BTChatWallet.Controls.StandardToken.StandardTokenContractAddressUserControl();
             this.gbTransfer = new System.Windows.Forms.GroupBox();
-            this.transferUserControl1 = new FCS.BTChatWallet.Controls.SendTransactionUserControl();
-            this.transactionsUserControl1 = new FCS.BTChatWallet.Controls.TransactionsUserControl();
             this.tabStepMainLoadAccount = new System.Windows.Forms.TabPage();
             this.tabPageLoadAccount = new System.Windows.Forms.TabControl();
             this.tabPageLoadAccountFromFile = new System.Windows.Forms.TabPage();
-            this.keystoreAccountLoaderUserControl3 = new FCS.BTChatWallet.KeystoreAccountLoaderUserControl();
             this.tabPageHdWallet = new System.Windows.Forms.TabPage();
-            this.hdWalletAccountLoaderUserControl1 = new FCS.BTChatWallet.Controls.HDWalletAccountLoaderUserControl();
             this.tabPageLoadAccountFromPrivateKey = new System.Windows.Forms.TabPage();
-            this.privateKeyAccountLoaderUserControl1 = new FCS.BTChatWallet.PrivateKeyAccountLoaderUserControl();
             this.tabSteps = new System.Windows.Forms.TabControl();
+            this.keystoreAccountLoaderUserControl3 = new FCS.BTChatWallet.KeystoreAccountLoaderUserControl();
+            this.hdWalletAccountLoaderUserControl1 = new FCS.BTChatWallet.Controls.HDWalletAccountLoaderUserControl();
+            this.privateKeyAccountLoaderUserControl1 = new FCS.BTChatWallet.PrivateKeyAccountLoaderUserControl();
+            this.standardTokenTransferUserControl1 = new FCS.BTChatWallet.Controls.StandardToken.StandardTokenTransferUserControl();
+            this.standardTokenBalanceOfUserControl1 = new FCS.BTChatWallet.Controls.StandardToken.StandardTokenBalanceOfUserControl();
+            this.standardTokenContractAddressUserControl1 = new FCS.BTChatWallet.Controls.StandardToken.StandardTokenContractAddressUserControl();
+            this.transferUserControl1 = new FCS.BTChatWallet.Controls.SendTransactionUserControl();
+            this.transactionsUserControl1 = new FCS.BTChatWallet.Controls.TransactionsUserControl();
             this.panel1.SuspendLayout();
             this.tabPageTransactions.SuspendLayout();
             this.panelSendTransactionStandardToken.SuspendLayout();
@@ -86,7 +86,7 @@
             this.lblAccount.AutoSize = true;
             this.lblAccount.Location = new System.Drawing.Point(29, 18);
             this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(101, 12);
+            this.lblAccount.Size = new System.Drawing.Size(59, 12);
             this.lblAccount.TabIndex = 1;
             this.lblAccount.Text = "账户地址:";
             // 
@@ -95,7 +95,7 @@
             this.lblPrivateKey.AutoSize = true;
             this.lblPrivateKey.Location = new System.Drawing.Point(29, 42);
             this.lblPrivateKey.Name = "lblPrivateKey";
-            this.lblPrivateKey.Size = new System.Drawing.Size(77, 12);
+            this.lblPrivateKey.Size = new System.Drawing.Size(35, 12);
             this.lblPrivateKey.TabIndex = 2;
             this.lblPrivateKey.Text = "私钥:";
             // 
@@ -132,7 +132,7 @@
             this.lblTextAccountBalance.AutoSize = true;
             this.lblTextAccountBalance.Location = new System.Drawing.Point(29, 66);
             this.lblTextAccountBalance.Name = "lblTextAccountBalance";
-            this.lblTextAccountBalance.Size = new System.Drawing.Size(107, 12);
+            this.lblTextAccountBalance.Size = new System.Drawing.Size(77, 12);
             this.lblTextAccountBalance.TabIndex = 2;
             this.lblTextAccountBalance.Text = "余额（ETH）:";
             // 
@@ -227,33 +227,6 @@
             this.gbStandardToken.TabStop = false;
             this.gbStandardToken.Text = "标准ETH Token";
             // 
-            // standardTokenTransferUserControl1
-            // 
-            this.standardTokenTransferUserControl1.Location = new System.Drawing.Point(18, 99);
-            this.standardTokenTransferUserControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.standardTokenTransferUserControl1.Name = "standardTokenTransferUserControl1";
-            this.standardTokenTransferUserControl1.Size = new System.Drawing.Size(378, 162);
-            this.standardTokenTransferUserControl1.TabIndex = 2;
-            this.standardTokenTransferUserControl1.ViewModel = null;
-            // 
-            // standardTokenBalanceOfUserControl1
-            // 
-            this.standardTokenBalanceOfUserControl1.Location = new System.Drawing.Point(19, 54);
-            this.standardTokenBalanceOfUserControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.standardTokenBalanceOfUserControl1.Name = "standardTokenBalanceOfUserControl1";
-            this.standardTokenBalanceOfUserControl1.Size = new System.Drawing.Size(419, 38);
-            this.standardTokenBalanceOfUserControl1.TabIndex = 1;
-            this.standardTokenBalanceOfUserControl1.ViewModel = null;
-            // 
-            // standardTokenContractAddressUserControl1
-            // 
-            this.standardTokenContractAddressUserControl1.Location = new System.Drawing.Point(5, 17);
-            this.standardTokenContractAddressUserControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.standardTokenContractAddressUserControl1.Name = "standardTokenContractAddressUserControl1";
-            this.standardTokenContractAddressUserControl1.Size = new System.Drawing.Size(402, 47);
-            this.standardTokenContractAddressUserControl1.TabIndex = 0;
-            this.standardTokenContractAddressUserControl1.ViewModel = null;
-            // 
             // gbTransfer
             // 
             this.gbTransfer.Controls.Add(this.transferUserControl1);
@@ -264,26 +237,6 @@
             this.gbTransfer.TabIndex = 1;
             this.gbTransfer.TabStop = false;
             this.gbTransfer.Text = "发送交易";
-            // 
-            // transferUserControl1
-            // 
-            this.transferUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.transferUserControl1.Location = new System.Drawing.Point(3, 17);
-            this.transferUserControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.transferUserControl1.Name = "transferUserControl1";
-            this.transferUserControl1.Size = new System.Drawing.Size(388, 256);
-            this.transferUserControl1.TabIndex = 0;
-            this.transferUserControl1.ViewModel = null;
-            // 
-            // transactionsUserControl1
-            // 
-            this.transactionsUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.transactionsUserControl1.Location = new System.Drawing.Point(3, 3);
-            this.transactionsUserControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.transactionsUserControl1.Name = "transactionsUserControl1";
-            this.transactionsUserControl1.Size = new System.Drawing.Size(838, 537);
-            this.transactionsUserControl1.TabIndex = 1;
-            this.transactionsUserControl1.ViewModel = null;
             // 
             // tabStepMainLoadAccount
             // 
@@ -319,15 +272,6 @@
             this.tabPageLoadAccountFromFile.Text = "KeyStore文件";
             this.tabPageLoadAccountFromFile.UseVisualStyleBackColor = true;
             // 
-            // keystoreAccountLoaderUserControl3
-            // 
-            this.keystoreAccountLoaderUserControl3.Location = new System.Drawing.Point(0, 6);
-            this.keystoreAccountLoaderUserControl3.Margin = new System.Windows.Forms.Padding(4);
-            this.keystoreAccountLoaderUserControl3.Name = "keystoreAccountLoaderUserControl3";
-            this.keystoreAccountLoaderUserControl3.Size = new System.Drawing.Size(440, 145);
-            this.keystoreAccountLoaderUserControl3.TabIndex = 0;
-            this.keystoreAccountLoaderUserControl3.ViewModel = null;
-            // 
             // tabPageHdWallet
             // 
             this.tabPageHdWallet.Controls.Add(this.hdWalletAccountLoaderUserControl1);
@@ -338,16 +282,6 @@
             this.tabPageHdWallet.TabIndex = 1;
             this.tabPageHdWallet.Text = "助记词";
             this.tabPageHdWallet.UseVisualStyleBackColor = true;
-            // 
-            // hdWalletAccountLoaderUserControl1
-            //
-            this.hdWalletAccountLoaderUserControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.hdWalletAccountLoaderUserControl1.Location = new System.Drawing.Point(3, 3);
-            this.hdWalletAccountLoaderUserControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.hdWalletAccountLoaderUserControl1.Name = "hdWalletAccountLoaderUserControl1";
-            this.hdWalletAccountLoaderUserControl1.Size = new System.Drawing.Size(824, 206);
-            this.hdWalletAccountLoaderUserControl1.TabIndex = 0;
-            this.hdWalletAccountLoaderUserControl1.ViewModel = null;
             // 
             // tabPageLoadAccountFromPrivateKey
             // 
@@ -360,6 +294,37 @@
             this.tabPageLoadAccountFromPrivateKey.Text = "私钥";
             this.tabPageLoadAccountFromPrivateKey.UseVisualStyleBackColor = true;
             // 
+            // tabSteps
+            // 
+            this.tabSteps.Controls.Add(this.tabStepMainLoadAccount);
+            this.tabSteps.Controls.Add(this.tabPageTransactions);
+            this.tabSteps.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tabSteps.ItemSize = new System.Drawing.Size(48, 18);
+            this.tabSteps.Location = new System.Drawing.Point(0, 126);
+            this.tabSteps.Name = "tabSteps";
+            this.tabSteps.SelectedIndex = 0;
+            this.tabSteps.Size = new System.Drawing.Size(852, 569);
+            this.tabSteps.TabIndex = 4;
+            // 
+            // keystoreAccountLoaderUserControl3
+            // 
+            this.keystoreAccountLoaderUserControl3.Location = new System.Drawing.Point(0, 6);
+            this.keystoreAccountLoaderUserControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.keystoreAccountLoaderUserControl3.Name = "keystoreAccountLoaderUserControl3";
+            this.keystoreAccountLoaderUserControl3.Size = new System.Drawing.Size(440, 145);
+            this.keystoreAccountLoaderUserControl3.TabIndex = 0;
+            this.keystoreAccountLoaderUserControl3.ViewModel = null;
+            // 
+            // hdWalletAccountLoaderUserControl1
+            // 
+            this.hdWalletAccountLoaderUserControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.hdWalletAccountLoaderUserControl1.Location = new System.Drawing.Point(3, 3);
+            this.hdWalletAccountLoaderUserControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.hdWalletAccountLoaderUserControl1.Name = "hdWalletAccountLoaderUserControl1";
+            this.hdWalletAccountLoaderUserControl1.Size = new System.Drawing.Size(824, 206);
+            this.hdWalletAccountLoaderUserControl1.TabIndex = 0;
+            this.hdWalletAccountLoaderUserControl1.ViewModel = null;
+            // 
             // privateKeyAccountLoaderUserControl1
             // 
             this.privateKeyAccountLoaderUserControl1.Location = new System.Drawing.Point(1, 6);
@@ -369,16 +334,52 @@
             this.privateKeyAccountLoaderUserControl1.TabIndex = 0;
             this.privateKeyAccountLoaderUserControl1.ViewModel = null;
             // 
-            // tabSteps
+            // standardTokenTransferUserControl1
             // 
-            this.tabSteps.Controls.Add(this.tabStepMainLoadAccount);
-            this.tabSteps.Controls.Add(this.tabPageTransactions);
-            this.tabSteps.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabSteps.Location = new System.Drawing.Point(0, 126);
-            this.tabSteps.Name = "tabSteps";
-            this.tabSteps.SelectedIndex = 0;
-            this.tabSteps.Size = new System.Drawing.Size(852, 569);
-            this.tabSteps.TabIndex = 4;
+            this.standardTokenTransferUserControl1.Location = new System.Drawing.Point(5, 99);
+            this.standardTokenTransferUserControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.standardTokenTransferUserControl1.Name = "standardTokenTransferUserControl1";
+            this.standardTokenTransferUserControl1.Size = new System.Drawing.Size(433, 162);
+            this.standardTokenTransferUserControl1.TabIndex = 2;
+            this.standardTokenTransferUserControl1.ViewModel = null;
+            // 
+            // standardTokenBalanceOfUserControl1
+            // 
+            this.standardTokenBalanceOfUserControl1.Location = new System.Drawing.Point(5, 54);
+            this.standardTokenBalanceOfUserControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.standardTokenBalanceOfUserControl1.Name = "standardTokenBalanceOfUserControl1";
+            this.standardTokenBalanceOfUserControl1.Size = new System.Drawing.Size(433, 38);
+            this.standardTokenBalanceOfUserControl1.TabIndex = 1;
+            this.standardTokenBalanceOfUserControl1.ViewModel = null;
+            // 
+            // standardTokenContractAddressUserControl1
+            // 
+            this.standardTokenContractAddressUserControl1.Location = new System.Drawing.Point(5, 17);
+            this.standardTokenContractAddressUserControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.standardTokenContractAddressUserControl1.Name = "standardTokenContractAddressUserControl1";
+            this.standardTokenContractAddressUserControl1.Size = new System.Drawing.Size(433, 47);
+            this.standardTokenContractAddressUserControl1.TabIndex = 0;
+            this.standardTokenContractAddressUserControl1.ViewModel = null;
+            // 
+            // transferUserControl1
+            // 
+            this.transferUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transferUserControl1.Location = new System.Drawing.Point(3, 17);
+            this.transferUserControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.transferUserControl1.Name = "transferUserControl1";
+            this.transferUserControl1.Size = new System.Drawing.Size(388, 256);
+            this.transferUserControl1.TabIndex = 0;
+            this.transferUserControl1.ViewModel = null;
+            // 
+            // transactionsUserControl1
+            // 
+            this.transactionsUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transactionsUserControl1.Location = new System.Drawing.Point(3, 3);
+            this.transactionsUserControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.transactionsUserControl1.Name = "transactionsUserControl1";
+            this.transactionsUserControl1.Size = new System.Drawing.Size(838, 537);
+            this.transactionsUserControl1.TabIndex = 1;
+            this.transactionsUserControl1.ViewModel = null;
             // 
             // MainForm
             // 

@@ -35,10 +35,9 @@
             // 
             // btnRefreshBalance
             // 
-            this.btnRefreshBalance.Location = new System.Drawing.Point(366, 9);
-            this.btnRefreshBalance.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRefreshBalance.Location = new System.Drawing.Point(311, 4);
             this.btnRefreshBalance.Name = "btnRefreshBalance";
-            this.btnRefreshBalance.Size = new System.Drawing.Size(160, 28);
+            this.btnRefreshBalance.Size = new System.Drawing.Size(120, 28);
             this.btnRefreshBalance.TabIndex = 7;
             this.btnRefreshBalance.Text = "刷新余额";
             this.btnRefreshBalance.UseVisualStyleBackColor = true;
@@ -46,32 +45,31 @@
             // lblAccountBalance
             // 
             this.lblAccountBalance.AutoSize = true;
-            this.lblAccountBalance.Location = new System.Drawing.Point(139, 9);
-            this.lblAccountBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAccountBalance.Location = new System.Drawing.Point(54, 12);
             this.lblAccountBalance.Name = "lblAccountBalance";
-            this.lblAccountBalance.Size = new System.Drawing.Size(16, 17);
+            this.lblAccountBalance.Size = new System.Drawing.Size(11, 12);
             this.lblAccountBalance.TabIndex = 6;
             this.lblAccountBalance.Text = "0";
             // 
             // lblTextAccountBalance
             // 
             this.lblTextAccountBalance.AutoSize = true;
-            this.lblTextAccountBalance.Location = new System.Drawing.Point(6, 11);
-            this.lblTextAccountBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTextAccountBalance.Location = new System.Drawing.Point(14, 12);
             this.lblTextAccountBalance.Name = "lblTextAccountBalance";
-            this.lblTextAccountBalance.Size = new System.Drawing.Size(63, 17);
+            this.lblTextAccountBalance.Size = new System.Drawing.Size(35, 12);
             this.lblTextAccountBalance.TabIndex = 5;
             this.lblTextAccountBalance.Text = "余额:";
             // 
             // StandardTokenBalanceOfUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnRefreshBalance);
             this.Controls.Add(this.lblAccountBalance);
             this.Controls.Add(this.lblTextAccountBalance);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StandardTokenBalanceOfUserControl";
-            this.Size = new System.Drawing.Size(559, 51);
+            this.Size = new System.Drawing.Size(438, 38);
             this.ResumeLayout(false);
             this.PerformLayout();
 

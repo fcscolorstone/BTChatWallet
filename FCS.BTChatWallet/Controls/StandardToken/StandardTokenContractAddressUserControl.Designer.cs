@@ -35,28 +35,29 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(13, 15);
+            this.lblAddress.Location = new System.Drawing.Point(9, 15);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(91, 13);
+            this.lblAddress.Size = new System.Drawing.Size(59, 12);
             this.lblAddress.TabIndex = 22;
             this.lblAddress.Text = "合约地址:";
             // 
             // txtContractAddress
             // 
-            this.txtContractAddress.Location = new System.Drawing.Point(116, 14);
+            this.txtContractAddress.Font = new System.Drawing.Font("宋体", 10F);
+            this.txtContractAddress.Location = new System.Drawing.Point(78, 10);
             this.txtContractAddress.Name = "txtContractAddress";
-            this.txtContractAddress.Size = new System.Drawing.Size(197, 20);
+            this.txtContractAddress.Size = new System.Drawing.Size(350, 23);
             this.txtContractAddress.TabIndex = 21;
             // 
             // StandardTokenContractAddressUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.txtContractAddress);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StandardTokenContractAddressUserControl";
-            this.Size = new System.Drawing.Size(402, 51);
+            this.Size = new System.Drawing.Size(438, 47);
             this.ResumeLayout(false);
             this.PerformLayout();
 

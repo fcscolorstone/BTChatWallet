@@ -36,9 +36,9 @@
             // 
             // btnLoadAccountFromPrivateKey
             // 
-            this.btnLoadAccountFromPrivateKey.Location = new System.Drawing.Point(196, 56);
+            this.btnLoadAccountFromPrivateKey.Location = new System.Drawing.Point(198, 52);
             this.btnLoadAccountFromPrivateKey.Name = "btnLoadAccountFromPrivateKey";
-            this.btnLoadAccountFromPrivateKey.Size = new System.Drawing.Size(207, 23);
+            this.btnLoadAccountFromPrivateKey.Size = new System.Drawing.Size(192, 30);
             this.btnLoadAccountFromPrivateKey.TabIndex = 17;
             this.btnLoadAccountFromPrivateKey.Text = "从私钥导入账户";
             this.btnLoadAccountFromPrivateKey.UseVisualStyleBackColor = true;
@@ -46,28 +46,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 21);
+            this.label1.Location = new System.Drawing.Point(10, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(35, 12);
             this.label1.TabIndex = 15;
             this.label1.Text = "私钥:";
             // 
             // txtPrivateKey
             // 
-            this.txtPrivateKey.Location = new System.Drawing.Point(96, 21);
+            this.txtPrivateKey.Font = new System.Drawing.Font("宋体", 10F);
+            this.txtPrivateKey.Location = new System.Drawing.Point(49, 13);
             this.txtPrivateKey.Name = "txtPrivateKey";
-            this.txtPrivateKey.Size = new System.Drawing.Size(197, 20);
+            this.txtPrivateKey.Size = new System.Drawing.Size(341, 23);
             this.txtPrivateKey.TabIndex = 13;
             // 
             // PrivateKeyAccountLoaderUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnLoadAccountFromPrivateKey);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPrivateKey);
             this.Name = "PrivateKeyAccountLoaderUserControl";
-            this.Size = new System.Drawing.Size(406, 104);
+            this.Size = new System.Drawing.Size(406, 96);
             this.ResumeLayout(false);
             this.PerformLayout();
 

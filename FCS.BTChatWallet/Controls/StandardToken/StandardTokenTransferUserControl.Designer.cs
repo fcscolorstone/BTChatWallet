@@ -42,40 +42,42 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 102);
+            this.label1.Location = new System.Drawing.Point(11, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 35;
             this.label1.Text = "Gas Price:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 72);
+            this.label2.Location = new System.Drawing.Point(11, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 13);
+            this.label2.Size = new System.Drawing.Size(125, 12);
             this.label2.TabIndex = 34;
             this.label2.Text = "Gas (可选-动态计算):";
             // 
             // txtGasPrice
             // 
-            this.txtGasPrice.Location = new System.Drawing.Point(157, 102);
+            this.txtGasPrice.Font = new System.Drawing.Font("宋体", 10F);
+            this.txtGasPrice.Location = new System.Drawing.Point(146, 95);
             this.txtGasPrice.Name = "txtGasPrice";
-            this.txtGasPrice.Size = new System.Drawing.Size(197, 20);
+            this.txtGasPrice.Size = new System.Drawing.Size(286, 23);
             this.txtGasPrice.TabIndex = 33;
             // 
             // txtGas
             // 
-            this.txtGas.Location = new System.Drawing.Point(157, 72);
+            this.txtGas.Font = new System.Drawing.Font("宋体", 10F);
+            this.txtGas.Location = new System.Drawing.Point(146, 67);
             this.txtGas.Name = "txtGas";
-            this.txtGas.Size = new System.Drawing.Size(197, 20);
+            this.txtGas.Size = new System.Drawing.Size(286, 23);
             this.txtGas.TabIndex = 32;
             // 
             // btnSendTransaction
             // 
-            this.btnSendTransaction.Location = new System.Drawing.Point(245, 140);
+            this.btnSendTransaction.Location = new System.Drawing.Point(267, 129);
             this.btnSendTransaction.Name = "btnSendTransaction";
-            this.btnSendTransaction.Size = new System.Drawing.Size(107, 23);
+            this.btnSendTransaction.Size = new System.Drawing.Size(165, 28);
             this.btnSendTransaction.TabIndex = 31;
             this.btnSendTransaction.Text = "发送交易";
             this.btnSendTransaction.UseVisualStyleBackColor = true;
@@ -83,38 +85,40 @@
             // lblAmountInEther
             // 
             this.lblAmountInEther.AutoSize = true;
-            this.lblAmountInEther.Location = new System.Drawing.Point(21, 45);
+            this.lblAmountInEther.Location = new System.Drawing.Point(11, 43);
             this.lblAmountInEther.Name = "lblAmountInEther";
-            this.lblAmountInEther.Size = new System.Drawing.Size(80, 13);
+            this.lblAmountInEther.Size = new System.Drawing.Size(65, 12);
             this.lblAmountInEther.TabIndex = 30;
             this.lblAmountInEther.Text = "Token数量:";
             // 
             // lblToAddress
             // 
             this.lblToAddress.AutoSize = true;
-            this.lblToAddress.Location = new System.Drawing.Point(21, 15);
+            this.lblToAddress.Location = new System.Drawing.Point(11, 15);
             this.lblToAddress.Name = "lblToAddress";
-            this.lblToAddress.Size = new System.Drawing.Size(64, 13);
+            this.lblToAddress.Size = new System.Drawing.Size(59, 12);
             this.lblToAddress.TabIndex = 29;
             this.lblToAddress.Text = "收款地址:";
             // 
             // txtTokenAmount
             // 
-            this.txtTokenAmount.Location = new System.Drawing.Point(157, 45);
+            this.txtTokenAmount.Font = new System.Drawing.Font("宋体", 10F);
+            this.txtTokenAmount.Location = new System.Drawing.Point(146, 39);
             this.txtTokenAmount.Name = "txtTokenAmount";
-            this.txtTokenAmount.Size = new System.Drawing.Size(197, 20);
+            this.txtTokenAmount.Size = new System.Drawing.Size(286, 23);
             this.txtTokenAmount.TabIndex = 28;
             // 
             // txtToAddress
             // 
-            this.txtToAddress.Location = new System.Drawing.Point(157, 15);
+            this.txtToAddress.Font = new System.Drawing.Font("宋体", 10F);
+            this.txtToAddress.Location = new System.Drawing.Point(146, 11);
             this.txtToAddress.Name = "txtToAddress";
-            this.txtToAddress.Size = new System.Drawing.Size(197, 20);
+            this.txtToAddress.Size = new System.Drawing.Size(286, 23);
             this.txtToAddress.TabIndex = 27;
             // 
             // StandardTokenTransferUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -125,9 +129,9 @@
             this.Controls.Add(this.lblToAddress);
             this.Controls.Add(this.txtTokenAmount);
             this.Controls.Add(this.txtToAddress);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StandardTokenTransferUserControl";
-            this.Size = new System.Drawing.Size(378, 176);
+            this.Size = new System.Drawing.Size(451, 162);
             this.ResumeLayout(false);
             this.PerformLayout();
 
