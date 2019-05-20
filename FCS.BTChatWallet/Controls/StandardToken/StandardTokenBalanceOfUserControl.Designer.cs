@@ -40,7 +40,7 @@
             this.btnRefreshBalance.Name = "btnRefreshBalance";
             this.btnRefreshBalance.Size = new System.Drawing.Size(160, 28);
             this.btnRefreshBalance.TabIndex = 7;
-            this.btnRefreshBalance.Text = "Refresh Balance";
+            this.btnRefreshBalance.Text = "刷新余额";
             this.btnRefreshBalance.UseVisualStyleBackColor = true;
             // 
             // lblAccountBalance
@@ -61,7 +61,7 @@
             this.lblTextAccountBalance.Name = "lblTextAccountBalance";
             this.lblTextAccountBalance.Size = new System.Drawing.Size(63, 17);
             this.lblTextAccountBalance.TabIndex = 5;
-            this.lblTextAccountBalance.Text = "Balance:";
+            this.lblTextAccountBalance.Text = "余额:";
             // 
             // StandardTokenBalanceOfUserControl
             // 

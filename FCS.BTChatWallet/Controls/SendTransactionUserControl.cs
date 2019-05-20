@@ -39,7 +39,7 @@ namespace FCS.BTChatWallet.Controls
                                 {
                                     var dialogResult = MessageBox.Show(
                                         interaction.Input,
-                                        "Confirm Transaction",
+                                        "确定交易？",
                                         MessageBoxButtons.YesNo,
                                         MessageBoxIcon.Question
                                     );

@@ -32,10 +32,10 @@ namespace Nethereum.UI.ViewModels
 
         public async Task<string> ExecuteAsync()
         {
-            Ensure.ArgumentNotNullOrEmpty(this.AddressTo, "Address To");
-            Ensure.ArgumentNotNullOrEmpty(this.Url, "Url");
-            Ensure.ArgumentNotNull(this.Account, "Account");
-            Ensure.ArgumentNotNull(this.AmountInEther, "Amount in Ether");
+            Ensure.ArgumentNotNullOrEmpty(this.AddressTo, "收款地址");
+            Ensure.ArgumentNotNullOrEmpty(this.Url, "Rpc Url");
+            Ensure.ArgumentNotNull(this.Account, "账号");
+            Ensure.ArgumentNotNull(this.AmountInEther, "数量");
 
             var confirmed = await _confirmTransfer.Handle(GetConfirmationMessage());
 
@@ -67,7 +67,7 @@ namespace Nethereum.UI.ViewModels
         public string GetConfirmationMessage()
         {
             return
-                $"Are you sure you want to submit this transaction: \n\r To: {AddressTo} \n\r Amount: {AmountInEther}";
+                $"确定提交本次交易: \n\r 收款地址: {AddressTo} \n\r 数量: {AmountInEther}";
         }    
     }
 }

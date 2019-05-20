@@ -55,7 +55,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 13);
             this.label2.TabIndex = 34;
-            this.label2.Text = "Gas (Optional Calculated):";
+            this.label2.Text = "Gas (可选-动态计算):";
             // 
             // txtGasPrice
             // 
@@ -77,7 +77,7 @@
             this.btnSendTransaction.Name = "btnSendTransaction";
             this.btnSendTransaction.Size = new System.Drawing.Size(107, 23);
             this.btnSendTransaction.TabIndex = 31;
-            this.btnSendTransaction.Text = "Send Transaction";
+            this.btnSendTransaction.Text = "发送交易";
             this.btnSendTransaction.UseVisualStyleBackColor = true;
             // 
             // lblAmountInEther
@@ -87,7 +87,7 @@
             this.lblAmountInEther.Name = "lblAmountInEther";
             this.lblAmountInEther.Size = new System.Drawing.Size(80, 13);
             this.lblAmountInEther.TabIndex = 30;
-            this.lblAmountInEther.Text = "Token Amount:";
+            this.lblAmountInEther.Text = "Token数量:";
             // 
             // lblToAddress
             // 
@@ -96,7 +96,7 @@
             this.lblToAddress.Name = "lblToAddress";
             this.lblToAddress.Size = new System.Drawing.Size(64, 13);
             this.lblToAddress.TabIndex = 29;
-            this.lblToAddress.Text = "To Address:";
+            this.lblToAddress.Text = "收款地址:";
             // 
             // txtTokenAmount
             // 

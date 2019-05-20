@@ -43,7 +43,7 @@
             this.btnLoadPrivateKeyFromKeyStore.Name = "btnLoadPrivateKeyFromKeyStore";
             this.btnLoadPrivateKeyFromKeyStore.Size = new System.Drawing.Size(207, 23);
             this.btnLoadPrivateKeyFromKeyStore.TabIndex = 17;
-            this.btnLoadPrivateKeyFromKeyStore.Text = "Load Private Key From File";
+            this.btnLoadPrivateKeyFromKeyStore.Text = "从KeyStore文件导入";
             this.btnLoadPrivateKeyFromKeyStore.UseVisualStyleBackColor = true;
             // 
             // lblKeyStoreFilePassword
@@ -53,7 +53,7 @@
             this.lblKeyStoreFilePassword.Name = "lblKeyStoreFilePassword";
             this.lblKeyStoreFilePassword.Size = new System.Drawing.Size(56, 13);
             this.lblKeyStoreFilePassword.TabIndex = 16;
-            this.lblKeyStoreFilePassword.Text = "Password:";
+            this.lblKeyStoreFilePassword.Text = "密码:";
             // 
             // label1
             // 
@@ -62,7 +62,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Key Store file:";
+            this.label1.Text = "KeyStore文件:";
             // 
             // txtPasswordKeyStore
             // 
@@ -85,7 +85,7 @@
             this.btnOpenFileKeyStore.Name = "btnOpenFileKeyStore";
             this.btnOpenFileKeyStore.Size = new System.Drawing.Size(75, 23);
             this.btnOpenFileKeyStore.TabIndex = 12;
-            this.btnOpenFileKeyStore.Text = "Open File..";
+            this.btnOpenFileKeyStore.Text = "选择文件..";
             this.btnOpenFileKeyStore.UseVisualStyleBackColor = true;
             this.btnOpenFileKeyStore.Click += new System.EventHandler(this.btnLoadPrivateKeyFromKeyStore_Click);
             // 

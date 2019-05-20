@@ -57,7 +57,7 @@ namespace FCS.BTChatWallet.Controls
             this.btnSendTransaction.Name = "btnSendTransaction";
             this.btnSendTransaction.Size = new System.Drawing.Size(143, 28);
             this.btnSendTransaction.TabIndex = 22;
-            this.btnSendTransaction.Text = "Send Transaction";
+            this.btnSendTransaction.Text = "Ethereum交易";
             this.btnSendTransaction.UseVisualStyleBackColor = true;
             // 
             // lblAmountInEther
@@ -68,7 +68,7 @@ namespace FCS.BTChatWallet.Controls
             this.lblAmountInEther.Name = "lblAmountInEther";
             this.lblAmountInEther.Size = new System.Drawing.Size(113, 17);
             this.lblAmountInEther.TabIndex = 21;
-            this.lblAmountInEther.Text = "Amount in Ether:";
+            this.lblAmountInEther.Text = "数量:";
             // 
             // lblToAddress
             // 
@@ -78,7 +78,7 @@ namespace FCS.BTChatWallet.Controls
             this.lblToAddress.Name = "lblToAddress";
             this.lblToAddress.Size = new System.Drawing.Size(85, 17);
             this.lblToAddress.TabIndex = 20;
-            this.lblToAddress.Text = "To Address:";
+            this.lblToAddress.Text = "收款地址:";
             // 
             // txtAmountInEther
             // 
@@ -105,7 +105,7 @@ namespace FCS.BTChatWallet.Controls
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 26;
-            this.label1.Text = "Gas Price:";
+            this.label1.Text = "Gas价格:";
             // 
             // label2
             // 
@@ -145,7 +145,7 @@ namespace FCS.BTChatWallet.Controls
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 17);
             this.label3.TabIndex = 31;
-            this.label3.Text = "Data (Optional):";
+            this.label3.Text = "Data (可选):";
             // 
             // lblNonce
             // 
@@ -155,7 +155,7 @@ namespace FCS.BTChatWallet.Controls
             this.lblNonce.Name = "lblNonce";
             this.lblNonce.Size = new System.Drawing.Size(120, 17);
             this.lblNonce.TabIndex = 30;
-            this.lblNonce.Text = "Nonce (Optional):";
+            this.lblNonce.Text = "Nonce (可选):";
             // 
             // txtData
             // 

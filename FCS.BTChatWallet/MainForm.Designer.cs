@@ -88,7 +88,7 @@
             this.lblAccount.Name = "lblAccount";
             this.lblAccount.Size = new System.Drawing.Size(101, 12);
             this.lblAccount.TabIndex = 1;
-            this.lblAccount.Text = "Account Address:";
+            this.lblAccount.Text = "账户地址:";
             // 
             // lblPrivateKey
             // 
@@ -168,7 +168,7 @@
             this.btnCreateAccount.Name = "btnCreateAccount";
             this.btnCreateAccount.Size = new System.Drawing.Size(116, 23);
             this.btnCreateAccount.TabIndex = 7;
-            this.btnCreateAccount.Text = "Create Account";
+            this.btnCreateAccount.Text = "创建账户";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
             this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
             // 
@@ -190,7 +190,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 4;
-            this.label2.Text = "RPC Url:";
+            this.label2.Text = "Rpc Url:";
             // 
             // tabPageTransactions
             // 
@@ -201,7 +201,7 @@
             this.tabPageTransactions.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageTransactions.Size = new System.Drawing.Size(844, 543);
             this.tabPageTransactions.TabIndex = 4;
-            this.tabPageTransactions.Text = "Send Transaction / Standard Token";
+            this.tabPageTransactions.Text = "发送交易(ETH/ERC20)";
             this.tabPageTransactions.UseVisualStyleBackColor = true;
             // 
             // panelSendTransactionStandardToken
@@ -225,7 +225,7 @@
             this.gbStandardToken.Size = new System.Drawing.Size(444, 276);
             this.gbStandardToken.TabIndex = 3;
             this.gbStandardToken.TabStop = false;
-            this.gbStandardToken.Text = "标准以太坊Token";
+            this.gbStandardToken.Text = "标准ETH Token";
             // 
             // standardTokenTransferUserControl1
             // 
@@ -293,7 +293,7 @@
             this.tabStepMainLoadAccount.Padding = new System.Windows.Forms.Padding(3);
             this.tabStepMainLoadAccount.Size = new System.Drawing.Size(844, 543);
             this.tabStepMainLoadAccount.TabIndex = 3;
-            this.tabStepMainLoadAccount.Text = "加载账户";
+            this.tabStepMainLoadAccount.Text = "账户";
             this.tabStepMainLoadAccount.UseVisualStyleBackColor = true;
             // 
             // tabPageLoadAccount
@@ -316,7 +316,7 @@
             this.tabPageLoadAccountFromFile.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageLoadAccountFromFile.Size = new System.Drawing.Size(830, 511);
             this.tabPageLoadAccountFromFile.TabIndex = 0;
-            this.tabPageLoadAccountFromFile.Text = "从KeyStore文件加载";
+            this.tabPageLoadAccountFromFile.Text = "KeyStore文件";
             this.tabPageLoadAccountFromFile.UseVisualStyleBackColor = true;
             // 
             // keystoreAccountLoaderUserControl3
@@ -336,11 +336,11 @@
             this.tabPageHdWallet.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageHdWallet.Size = new System.Drawing.Size(830, 511);
             this.tabPageHdWallet.TabIndex = 1;
-            this.tabPageHdWallet.Text = "Load from HD Wallet (backup words)";
+            this.tabPageHdWallet.Text = "助记词";
             this.tabPageHdWallet.UseVisualStyleBackColor = true;
             // 
             // hdWalletAccountLoaderUserControl1
-            // 
+            //
             this.hdWalletAccountLoaderUserControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.hdWalletAccountLoaderUserControl1.Location = new System.Drawing.Point(3, 3);
             this.hdWalletAccountLoaderUserControl1.Margin = new System.Windows.Forms.Padding(4);
@@ -357,7 +357,7 @@
             this.tabPageLoadAccountFromPrivateKey.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageLoadAccountFromPrivateKey.Size = new System.Drawing.Size(830, 511);
             this.tabPageLoadAccountFromPrivateKey.TabIndex = 2;
-            this.tabPageLoadAccountFromPrivateKey.Text = "导入私钥";
+            this.tabPageLoadAccountFromPrivateKey.Text = "私钥";
             this.tabPageLoadAccountFromPrivateKey.UseVisualStyleBackColor = true;
             // 
             // privateKeyAccountLoaderUserControl1

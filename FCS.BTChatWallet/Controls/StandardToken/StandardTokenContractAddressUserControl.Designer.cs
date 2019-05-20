@@ -39,7 +39,7 @@
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(91, 13);
             this.lblAddress.TabIndex = 22;
-            this.lblAddress.Text = "Contract Address:";
+            this.lblAddress.Text = "合约地址:";
             // 
             // txtContractAddress
             // 

@@ -75,7 +75,7 @@ namespace FCS.BTChatWallet.Controls
             this.btnLoadHdAccounts.Name = "btnLoadHdAccounts";
             this.btnLoadHdAccounts.Size = new System.Drawing.Size(207, 23);
             this.btnLoadHdAccounts.TabIndex = 22;
-            this.btnLoadHdAccounts.Text = "Load HD Accounts";
+            this.btnLoadHdAccounts.Text = "导入HD Wallet账户";
             this.btnLoadHdAccounts.UseVisualStyleBackColor = true;
             // 
             // lblKeyStoreFilePassword
@@ -85,7 +85,7 @@ namespace FCS.BTChatWallet.Controls
             this.lblKeyStoreFilePassword.Name = "lblKeyStoreFilePassword";
             this.lblKeyStoreFilePassword.Size = new System.Drawing.Size(56, 13);
             this.lblKeyStoreFilePassword.TabIndex = 21;
-            this.lblKeyStoreFilePassword.Text = "Password:";
+            this.lblKeyStoreFilePassword.Text = "密码:";
             // 
             // label1
             // 
@@ -94,7 +94,7 @@ namespace FCS.BTChatWallet.Controls
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Words:";
+            this.label1.Text = "助记词:";
             // 
             // txtPassword
             // 
@@ -139,7 +139,7 @@ namespace FCS.BTChatWallet.Controls
             this.btnloadAccount.ReadOnly = true;
             this.btnloadAccount.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.btnloadAccount.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.btnloadAccount.Text = "Select";
+            this.btnloadAccount.Text = "选择...";
             this.btnloadAccount.UseColumnTextForButtonValue = true;
             // 
             // HDWalletAccountLoaderUserControl

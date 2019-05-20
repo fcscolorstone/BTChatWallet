@@ -60,7 +60,7 @@ namespace FCS.BTChatWallet.Controls
             this.gbTransactions.Size = new System.Drawing.Size(633, 277);
             this.gbTransactions.TabIndex = 28;
             this.gbTransactions.TabStop = false;
-            this.gbTransactions.Text = "Transactions";
+            this.gbTransactions.Text = "交易流水";
             // 
             // dgTransactions
             // 
@@ -95,42 +95,42 @@ namespace FCS.BTChatWallet.Controls
             // blockHashDataGridViewTextBoxColumn
             // 
             this.blockHashDataGridViewTextBoxColumn.DataPropertyName = "BlockHash";
-            this.blockHashDataGridViewTextBoxColumn.HeaderText = "BlockHash";
+            this.blockHashDataGridViewTextBoxColumn.HeaderText = "区块高度";
             this.blockHashDataGridViewTextBoxColumn.Name = "blockHashDataGridViewTextBoxColumn";
             this.blockHashDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // transactionHashDataGridViewTextBoxColumn
             // 
             this.transactionHashDataGridViewTextBoxColumn.DataPropertyName = "TransactionHash";
-            this.transactionHashDataGridViewTextBoxColumn.HeaderText = "TransactionHash";
+            this.transactionHashDataGridViewTextBoxColumn.HeaderText = "交易号";
             this.transactionHashDataGridViewTextBoxColumn.Name = "transactionHashDataGridViewTextBoxColumn";
             this.transactionHashDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // statusDataGridViewTextBoxColumn
             // 
             this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "状态";
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             this.statusDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // fromDataGridViewTextBoxColumn
             // 
             this.fromDataGridViewTextBoxColumn.DataPropertyName = "From";
-            this.fromDataGridViewTextBoxColumn.HeaderText = "From";
+            this.fromDataGridViewTextBoxColumn.HeaderText = "付款地址";
             this.fromDataGridViewTextBoxColumn.Name = "fromDataGridViewTextBoxColumn";
             this.fromDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // toDataGridViewTextBoxColumn
             // 
             this.toDataGridViewTextBoxColumn.DataPropertyName = "To";
-            this.toDataGridViewTextBoxColumn.HeaderText = "To";
+            this.toDataGridViewTextBoxColumn.HeaderText = "收款地址";
             this.toDataGridViewTextBoxColumn.Name = "toDataGridViewTextBoxColumn";
             this.toDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // amountDataGridViewTextBoxColumn
             // 
             this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.amountDataGridViewTextBoxColumn.HeaderText = "数量";
             this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
             this.amountDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -144,7 +144,7 @@ namespace FCS.BTChatWallet.Controls
             // dataDataGridViewTextBoxColumn
             // 
             this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn.HeaderText = "交易数据";
             this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
             this.dataDataGridViewTextBoxColumn.ReadOnly = true;
             // 

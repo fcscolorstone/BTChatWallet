@@ -40,7 +40,7 @@
             this.btnLoadAccountFromPrivateKey.Name = "btnLoadAccountFromPrivateKey";
             this.btnLoadAccountFromPrivateKey.Size = new System.Drawing.Size(207, 23);
             this.btnLoadAccountFromPrivateKey.TabIndex = 17;
-            this.btnLoadAccountFromPrivateKey.Text = "Load Account From Private Key";
+            this.btnLoadAccountFromPrivateKey.Text = "从私钥导入账户";
             this.btnLoadAccountFromPrivateKey.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -50,7 +50,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 15;
-            this.label1.Text = "Private Key:";
+            this.label1.Text = "私钥:";
             // 
             // txtPrivateKey
             // 
