@@ -62,6 +62,13 @@ namespace FCS.BTChatWallet
             this.BindCommand(ViewModel, x => x.RefreshBalanceCommand, x => x.btnRefreshBalance);
 
             ViewModel.Url = "https://mainnet.infura.io";
+
+            WatchEvent();
+        }
+
+        public void WatchEvent()
+        {
+
         }
 
         object IViewFor.ViewModel
