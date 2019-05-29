@@ -6,8 +6,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Nethereum.JsonRpc.WebSocketStreamingClient;
 using Nethereum.KeyStore;
 using Nethereum.RPC.Eth.DTOs;
+using Nethereum.RPC.Reactive.Eth.Subscriptions;
 using Nethereum.Signer;
 using Nethereum.StandardToken.UI.ViewModels;
 using Nethereum.UI.ViewModels;
@@ -61,13 +63,27 @@ namespace FCS.BTChatWallet
             this.Bind(ViewModel, x => x.Url, x => x.cmbUrl.Text);
             this.BindCommand(ViewModel, x => x.RefreshBalanceCommand, x => x.btnRefreshBalance);
 
-            ViewModel.Url = "https://mainnet.infura.io";
+            ViewModel.Url = "https://ropsten.infura.io";
 
             WatchEvent();
         }
 
         public void WatchEvent()
         {
+            var client = new StreamingWebSocketClient("wss://mainnet.infura.io/ws");
+
+            // var client = new StreamingWebSocketClient("ws://127.0.0.1:8546");
+            var blockHeaderSubscription = new EthNewBlockHeadersObservableSubscription(client);
+
+            blockHeaderSubscription.GetSubscribeResponseAsObservable().Subscribe(subscriptionId =>
+                Console.WriteLine("Block Header subscription Id: " + subscriptionId));
+
+            blockHeaderSubscription.GetSubscriptionDataResponsesAsObservable().Subscribe(block =>
+                Console.WriteLine("New Block: " + block.BlockHash));
+
+            blockHeaderSubscription.GetUnsubscribeResponseAsObservable().Subscribe(response =>
+                            Console.WriteLine("Block Header unsubscribe result: " + response));
+
 
         }
 

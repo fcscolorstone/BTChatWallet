@@ -176,6 +176,7 @@
             // 
             this.cmbUrl.FormattingEnabled = true;
             this.cmbUrl.Items.AddRange(new object[] {
+            "https://ropsten.infura.io",
             "https://mainnet.infura.io",
             "http://localhost:8545"});
             this.cmbUrl.Location = new System.Drawing.Point(127, 85);

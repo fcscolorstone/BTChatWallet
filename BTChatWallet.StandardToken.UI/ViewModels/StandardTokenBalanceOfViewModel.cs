@@ -89,8 +89,9 @@ namespace Nethereum.StandardToken.UI.ViewModels
             var web3 = new Web3.Web3(Url);
             var handler = web3.Eth.GetContractHandler(ContractAddress);
             var balanceMessage = new BalanceOfFunction(){Owner = Address};
+
             var balance = await handler.QueryAsync<BalanceOfFunction,BigInteger>(balanceMessage);
-            
+
             //assuming all have 18 decimals
             var value = Web3.Web3.Convert.FromWeiToBigDecimal(balance);
             return decimal.Parse(value.ToString());

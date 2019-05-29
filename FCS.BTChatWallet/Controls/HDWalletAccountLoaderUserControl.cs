@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Nethereum.UI.ViewModels;
 using ReactiveUI;
-using ReactiveUI.Winforms;
+using ReactiveUI.Legacy;
 
 namespace FCS.BTChatWallet.Controls
 {
@@ -26,10 +26,9 @@ namespace FCS.BTChatWallet.Controls
             {
                 this.WhenActivated(d =>
                 {
-                    this.Accounts = this.ViewModel.Accounts.CreateDerivedBindingList(x => x);
+                    this.Accounts = this.ViewModel.Accounts.CreateDerivedCollection(x => x);
                     this.ViewModel.Accounts.ItemChanged.Subscribe(_ => this.Accounts.Reset());
                     this.dgAccounts.DataSource = this.Accounts;
-
                 });
 
                 dgAccounts.CellClick += dgAccounts_CellClick;
@@ -46,7 +45,7 @@ namespace FCS.BTChatWallet.Controls
         }
 
 
-        private IReactiveDerivedBindingList<HdWalletAccountViewModel> Accounts { get; set; }
+        private IReactiveDerivedList<HdWalletAccountViewModel> Accounts { get; set; }
         object IViewFor.ViewModel
         {
             get { return ViewModel; }

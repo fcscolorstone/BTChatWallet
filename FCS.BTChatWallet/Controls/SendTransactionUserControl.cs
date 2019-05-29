@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Nethereum.UI.ViewModels;
 using ReactiveUI;
-using ReactiveUI.Winforms;
 
 namespace FCS.BTChatWallet.Controls
 {

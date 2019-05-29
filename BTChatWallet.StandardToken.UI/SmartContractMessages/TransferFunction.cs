@@ -1,11 +1,11 @@
 using System.Numerics;
 using Nethereum.ABI.FunctionEncoding.Attributes;
-using Nethereum.Contracts.CQS;
+using Nethereum.Contracts;
 
 namespace Nethereum.StandardToken.UI.SmartContractMessages
 {
     [Function("transfer", "bool")]
-    public class TransferFunction : ContractMessage
+    public class TransferFunction : FunctionMessage
     {
         [Parameter("address", "_to", 1)]
         public string To { get; set; }
