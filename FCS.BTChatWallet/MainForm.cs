@@ -6,8 +6,12 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Nethereum.JsonRpc.Client;
 using Nethereum.JsonRpc.WebSocketStreamingClient;
 using Nethereum.KeyStore;
+using Nethereum.RPC;
+using Nethereum.RPC.Eth;
+using Nethereum.RPC.Eth.Blocks;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.RPC.Reactive.Eth.Subscriptions;
 using Nethereum.Signer;
@@ -65,10 +69,35 @@ namespace FCS.BTChatWallet
 
             ViewModel.Url = "https://ropsten.infura.io";
 
-            WatchEvent();
+            WatchEventRpc();
         }
 
-        public void WatchEvent()
+        public async void WatchEventRpc()
+        {
+            var client = new RpcClient(new Uri("https://mainnet.infura.io"));
+
+            var ethGetBlockByHash = new EthGetBlockWithTransactionsByNumber(client);
+
+            var bts = await ethGetBlockByHash.SendRequestAsync(new BlockParameter(7865954));
+            if (null != bts)
+            {
+                var author = bts.Author;
+            }
+
+            var ethGetGasEstimate = new EthGasPrice(client);
+            var gas = await ethGetGasEstimate.SendRequestAsync();
+            Console.WriteLine(gas.Value);
+
+            var apiService = new EthApiService(client);
+            var bal = await apiService.GetBalance.SendRequestAsync("0xDcCC7b8dDf511f7CE2Ecf8672F57a4E277d73198");
+            Console.WriteLine(bal.Value);
+
+            var gass = await apiService.GasPrice.SendRequestAsync();
+            Console.WriteLine(gass.Value);
+
+        }
+
+        public void WatchEventWebSocket()
         {
             var client = new StreamingWebSocketClient("wss://mainnet.infura.io/ws");
 
@@ -84,7 +113,8 @@ namespace FCS.BTChatWallet
             blockHeaderSubscription.GetUnsubscribeResponseAsObservable().Subscribe(response =>
                             Console.WriteLine("Block Header unsubscribe result: " + response));
 
-
+            //client.StartAsync().Wait();
+            //blockHeaderSubscription.SubscribeAsync().Wait();
         }
 
         object IViewFor.ViewModel

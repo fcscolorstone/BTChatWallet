@@ -3,6 +3,9 @@
   <PropertyGroup>
     <TargetFrameworks>net461</TargetFrameworks>
     <Copyright>fcs.one</Copyright>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>

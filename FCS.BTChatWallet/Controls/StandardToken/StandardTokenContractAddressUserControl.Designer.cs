@@ -30,6 +30,8 @@
         {
             this.lblAddress = new System.Windows.Forms.Label();
             this.txtContractAddress = new System.Windows.Forms.TextBox();
+            this.lblDecimals = new System.Windows.Forms.Label();
+            this.txtDecimals = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblAddress
@@ -49,15 +51,36 @@
             this.txtContractAddress.Size = new System.Drawing.Size(350, 23);
             this.txtContractAddress.TabIndex = 21;
             // 
+            // lblDecimals
+            // 
+            this.lblDecimals.AutoSize = true;
+            this.lblDecimals.Location = new System.Drawing.Point(33, 50);
+            this.lblDecimals.Name = "lblDecimals";
+            this.lblDecimals.Size = new System.Drawing.Size(35, 12);
+            this.lblDecimals.TabIndex = 23;
+            this.lblDecimals.Text = "精度:";
+            // 
+            // txtDecimals
+            // 
+            this.txtDecimals.Font = new System.Drawing.Font("宋体", 10F);
+            this.txtDecimals.Location = new System.Drawing.Point(78, 44);
+            this.txtDecimals.Name = "txtDecimals";
+            this.txtDecimals.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtDecimals.Size = new System.Drawing.Size(350, 23);
+            this.txtDecimals.TabIndex = 24;
+            this.txtDecimals.Text = "18";
+            // 
             // StandardTokenContractAddressUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtDecimals);
+            this.Controls.Add(this.lblDecimals);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.txtContractAddress);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StandardTokenContractAddressUserControl";
-            this.Size = new System.Drawing.Size(438, 47);
+            this.Size = new System.Drawing.Size(438, 78);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -67,5 +90,7 @@
 
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.TextBox txtContractAddress;
+        private System.Windows.Forms.Label lblDecimals;
+        private System.Windows.Forms.TextBox txtDecimals;
     }
 }

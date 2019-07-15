@@ -33,7 +33,6 @@ namespace FCS.BTChatWallet.Controls
             this.components = new System.ComponentModel.Container();
             this.gbTransactions = new System.Windows.Forms.GroupBox();
             this.dgTransactions = new System.Windows.Forms.DataGridView();
-            this.transactionViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.blockHashDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.transactionHashDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +43,7 @@ namespace FCS.BTChatWallet.Controls
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gasPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nonceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.transactionViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gbTransactions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgTransactions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionViewModelBindingSource)).BeginInit();
@@ -53,11 +53,9 @@ namespace FCS.BTChatWallet.Controls
             // 
             this.gbTransactions.Controls.Add(this.dgTransactions);
             this.gbTransactions.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gbTransactions.Location = new System.Drawing.Point(0, 13);
-            this.gbTransactions.Margin = new System.Windows.Forms.Padding(4);
+            this.gbTransactions.Location = new System.Drawing.Point(0, 60);
             this.gbTransactions.Name = "gbTransactions";
-            this.gbTransactions.Padding = new System.Windows.Forms.Padding(4);
-            this.gbTransactions.Size = new System.Drawing.Size(633, 277);
+            this.gbTransactions.Size = new System.Drawing.Size(1337, 208);
             this.gbTransactions.TabIndex = 28;
             this.gbTransactions.TabStop = false;
             this.gbTransactions.Text = "交易流水";
@@ -81,16 +79,11 @@ namespace FCS.BTChatWallet.Controls
             this.nonceDataGridViewTextBoxColumn});
             this.dgTransactions.DataSource = this.transactionViewModelBindingSource;
             this.dgTransactions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgTransactions.Location = new System.Drawing.Point(4, 19);
-            this.dgTransactions.Margin = new System.Windows.Forms.Padding(4);
+            this.dgTransactions.Location = new System.Drawing.Point(3, 17);
             this.dgTransactions.Name = "dgTransactions";
             this.dgTransactions.ReadOnly = true;
-            this.dgTransactions.Size = new System.Drawing.Size(625, 254);
+            this.dgTransactions.Size = new System.Drawing.Size(1331, 188);
             this.dgTransactions.TabIndex = 0;
-            // 
-            // transactionViewModelBindingSource
-            // 
-            this.transactionViewModelBindingSource.DataSource = typeof(TransactionViewModel);
             // 
             // blockHashDataGridViewTextBoxColumn
             // 
@@ -162,13 +155,18 @@ namespace FCS.BTChatWallet.Controls
             this.nonceDataGridViewTextBoxColumn.Name = "nonceDataGridViewTextBoxColumn";
             this.nonceDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // transactionViewModelBindingSource
+            // 
+            this.transactionViewModelBindingSource.DataSource = typeof(Nethereum.UI.ViewModels.TransactionViewModel);
+            // 
             // TransactionsUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbTransactions);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TransactionsUserControl";
-            this.Size = new System.Drawing.Size(633, 290);
+            this.Size = new System.Drawing.Size(1337, 268);
             this.gbTransactions.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgTransactions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionViewModelBindingSource)).EndInit();

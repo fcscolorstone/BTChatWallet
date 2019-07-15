@@ -28,6 +28,13 @@ namespace Nethereum.StandardToken.UI.ViewModels
             set => this.RaiseAndSetIfChanged(ref _contractAddress, value);
         }
 
+        private int _decimals;
+        public int Decimals
+        {
+            get => _decimals;
+            set => this.RaiseAndSetIfChanged(ref _decimals, value);
+        }
+
         private string _address;
         public string Address
         {
@@ -56,6 +63,7 @@ namespace Nethereum.StandardToken.UI.ViewModels
             MessageBus.Current.Listen<StandardTokenAddressChanged>().Subscribe(x =>
                 {
                     ContractAddress = x.Address;
+                    Decimals = x.Decimals;
                 }
             );
 
@@ -93,7 +101,7 @@ namespace Nethereum.StandardToken.UI.ViewModels
             var balance = await handler.QueryAsync<BalanceOfFunction,BigInteger>(balanceMessage);
 
             //assuming all have 18 decimals
-            var value = Web3.Web3.Convert.FromWeiToBigDecimal(balance);
+            var value = Web3.Web3.Convert.FromWeiToBigDecimal(balance, Decimals);
             return decimal.Parse(value.ToString());
         }
     }

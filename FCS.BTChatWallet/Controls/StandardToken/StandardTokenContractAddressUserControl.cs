@@ -9,7 +9,14 @@ namespace FCS.BTChatWallet.Controls.StandardToken
         public StandardTokenContractAddressUserControl()
         {
             InitializeComponent();
-            this.Bind(ViewModel, x => x.ContractAddress, x => x.txtContractAddress.Text);
+            this.Bind(ViewModel, 
+                x => x.ContractAddress, 
+                x => x.txtContractAddress.Text
+                );
+            this.Bind(ViewModel, 
+                x => x.Decimals,
+                x => x.txtDecimals.Text
+                );
         }
 
         object IViewFor.ViewModel
